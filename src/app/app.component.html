@@ -1,0 +1,742 @@
+<!-- STYLE -->
+
+<style>
+  :host {}
+
+  .bg-mainTwo {
+    background-image: url(./assets/images/bg-mainTwo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 570px;
+
+  }
+
+  .bg-mainOne {
+    background-image: url(./assets/images/bg-mainOne.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 570px;
+    position: relative;
+    z-index: 1;
+    display: grid;
+  }
+
+  .bg-mainOne::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(228, 146, 2, 0.7);
+    z-index: -1;
+  }
+
+  .contItemHome {
+    grid-column-start: 9;
+    height: 100%;
+
+
+
+  }
+
+  .Brand {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+
+  .contSolution {
+    position: relative;
+    margin-top: 30px;
+    border: solid 3px white;
+    width: 230px;
+    height: 420px;
+    z-index: 5;
+  }
+
+  .contLogoMovil {
+    display: none;
+  }
+
+  .textSolution {
+    margin: 0;
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 2px;
+    font-size: 27px;
+    font-weight: 900;
+    color: white;
+    margin-left: 5px;
+    word-break: break-all;
+    zoom: 202%;
+    margin-top: -2px;
+    margin-bottom: -2px;
+  }
+  .textSolutionE{
+    margin: 0;
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 2px;
+    font-size: 27px;
+    font-weight: 900;
+    color: #ADADAD;
+    margin-left: 5px;
+    word-break: break-all;
+    zoom: 202%;
+    margin-top: -2px;
+    margin-bottom: -2px;
+  }
+
+  .textSolution1 {
+    margin: 0;
+    font-family: 'Archivo Black', sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    margin-left: 5px;
+    margin-top: 2px;
+    word-break: break-all;
+
+    zoom: 202%;
+
+  }
+
+  .lineHorizontalOne {
+    position: absolute;
+    bottom: 90px;
+    left: 0px;
+    width: 100%;
+    height: 120px;
+    background-color: rgba(0, 44, 64, 0.9);
+    display: grid;
+  }
+
+  .iconSocialNetwork{
+    
+    border-radius: 50%;
+    margin-top: 10px;
+  }
+  .iconSocialNetworkT{
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+  .iconSocialNetwork:hover{
+   zoom: 99%;
+  }
+.iconSocialNetworkT:hover{
+   zoom: 99%;
+  }
+.listSocialNetwork{
+  list-style: none;
+  display: inline; 
+ margin: 2px;
+}
+
+.contListSocialNetwork{
+  padding: 0;
+}
+
+.item-nav{
+  font-size: 14px;
+ font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 7px;
+  margin-right: 7px;
+  color: #727275;
+
+}
+.item-footer{
+  font-size: 14px;
+ font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 7px;
+  margin-right: 7px;
+  color: white;
+}
+.contBtnArrow{
+background-color: #E49202;
+border-radius: 15px;
+height: 100%;
+margin-left: 40px;
+margin-right: 40px;
+height: 25px;
+}
+.item-nav:hover{
+
+  color: #E49202;
+}
+.item-navA{
+  font-size: 14px;
+ font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 4px;
+  margin-right: 6px;
+  color: #E49202;
+}
+.item-footerA{
+  font-size: 14px;
+ font-weight: 900;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 4px;
+  margin-right: 6px;
+  color: #E49202;
+}
+.contNav{
+  margin-top: 15px;
+}
+.textLineOne{
+  color: #ADADAD;
+  font-family: 'Archivo Black', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  margin-top: 10px;
+  
+}
+.textLineThree{
+  color: #ADADAD;
+  font-family: 'Archivo Black', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+display: inline;
+  
+}
+.textLineTwo{
+  color: white;
+  font-family: 'Archivo Black', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+
+}
+
+.textNumberOne{
+ position: absolute;
+ bottom: 140px;
+ right: 20px;
+ color: white;
+ font-family: 'Archivo Black', sans-serif;
+ font-size: 50px;
+ margin: 0;
+
+}
+.textNumberTwo{
+  margin: 0;
+ position: absolute;
+ bottom: 110px;
+ right: 20px;
+ color: white;
+ font-family: 'Montserrat', sans-serif;
+ font-size: 30px;
+font-weight: 600;
+
+}
+.contBtns{
+position: absolute;
+bottom: 57px;
+right: 0px;
+}
+
+.tittleSectionProductsServices{
+  font-family: 'Montserrat', sans-serif;
+  color: #E49202;
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: 50px;
+  margin-bottom: 60px;
+
+}
+
+.sectionProductsServices{
+  width: 100%;
+ 
+  display: grid;
+
+}
+.contSetinTwo{
+  width: 100%;
+  display: grid;
+ height: 700px;
+}
+
+.ServiceTittle{
+color: #002C40;
+font-family: 'Archivo Black', sans-serif;
+
+}
+
+.cardService{
+  position: absolute;
+  right: 0px;
+}
+.cardSuport{
+  position: absolute;
+  left: 20%;
+  box-shadow: 0px 0px 40px #00000024;
+}
+.cardSuite{
+  position: absolute;
+  left: 0px;
+}
+.cardDeveloper{
+  position: absolute;
+  bottom: 10%;
+  right: -10%;
+}
+.cardAplication{
+  position: absolute;
+  bottom: 10%;
+ right: -80%;
+}
+.cardAll {
+  position: absolute;
+  bottom: 25%;
+ right: -150%;
+}
+.cardTittleOne{
+  margin-top: 30px;
+  color: #002C40;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 18px;
+
+}
+
+.cardTittleTwo{
+ margin-top: -7px;
+  color: #002C40;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 17px;
+
+}
+.btnServices{
+  color: white;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 12px;
+
+}
+.logoFooter{
+  margin-bottom: 10px;
+  margin-left: 4px;
+margin-right: 4px;
+}
+.contBtnServices{
+background-color: #C3C3C3;
+border-radius: 15px;
+height: 100%;
+margin-left: 20px;
+margin-right: 20px;
+height: 25px;
+}
+.contBtnSuport{
+  background-color: #E49202;
+  border-radius: 15px;
+height: 100%;
+margin-left: 20px;
+margin-right: 20px;
+height: 25px;
+}
+.contIconSocailNetwork{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.cardText{
+  color: #727275; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.marTop{
+  margin-top: 17px !important;
+}
+.rowTittle{
+  width: 100%;
+}
+.footer{
+  display: grid;
+  width: 100%;
+  height: 140px;
+  background-color: #2E2E2E;
+}
+.contListFooter{
+margin-top: 20px;
+text-align: center;
+
+}
+.contPolitic{
+  text-align: center;
+  background-color: #727275;
+}
+.textPolitic{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+font-weight: 900;  
+}
+@media screen and (max-width: 1200px) {
+  
+.cardService{
+  position: absolute;
+  left:  0;
+}
+.cardSuport{
+  position: absolute;
+  right: 40%;
+
+  box-shadow: 0px 0px 40px #00000024;
+}
+.cardSuite{
+  position: absolute;
+  left: 60%;
+
+}
+    }
+ @media screen and (max-width: 992px) {
+  
+  .cardService{
+  position: absolute;
+
+}
+.cardSuport{
+  position: absolute;
+  margin-left: 100px;
+}
+.cardSuite{
+  position: absolute;
+  margin-left: 50px;
+  margin-right: 80px;
+
+}
+  
+    }
+   @media screen and (max-width: 836px) {
+ 
+  
+    }
+@media screen and (max-width: 1290px) {
+  .cardDeveloper{
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+}
+.cardAplication{
+  position: absolute;
+  bottom: 10%;
+ left: 70%;
+}
+.cardAll {
+  position: absolute;
+  bottom: 25%;
+ left: 120%;
+}
+    }
+  
+
+@media screen and (max-width: 950px) {
+  
+.textNumberOne{
+ position: absolute;
+ bottom: 160px;
+}
+.textNumberTwo{
+ position: absolute;
+ bottom: 130px;
+}
+
+  }
+  @media screen and (max-width: 768px) {
+    .contItemHome {
+      display: none;
+
+    }
+
+    .contSolution {
+      display: none;
+    }
+
+    .bg-mainOne {
+      height: 80px;
+    }
+
+    .contLogoMovil {
+      display: inline;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+
+  }
+</style>
+<!-- /STYLE -->
+
+<!-- HTML -->
+
+<!-- Section Main of Home -->
+
+<div class="SectionHomeMain">
+  <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5 bg-mainOne">
+
+    <div class="contLogoMovil">
+      <img 
+      class="logoMovil"
+       src="../assets/images/Logo.svg" 
+       alt="Logo">
+    </div>
+
+    <div class="contItemHome">
+
+      <img width="95" class="Brand " src="../assets/images/Logo.svg" alt="">
+
+      <div class="contSolution">
+        <h1 class="textSolution1">
+          TE
+        </h1>
+        <h1 class="textSolution">
+          BRIN
+        </h1>
+        <h1 class="textSolution">
+          DA
+        </h1>
+        <h1 class="textSolution">
+          MOS
+        </h1>
+        <h1 class="textSolution">
+          SOLU
+        </h1>
+        <h1 class="textSolutionE">
+          CIO
+        </h1>
+        <h1 class="textSolutionE">
+          NES
+        </h1>
+
+      </div>
+      <ul class="contListSocialNetwork">
+        <li class="listSocialNetwork">
+         <a href="#">
+            <img
+            class="iconSocialNetwork"
+            src="../assets/images/iconFacebook.png" 
+            alt="iconFacebook">
+         </a> 
+        </li>
+        <li  class="listSocialNetwork">
+          <a href="#">
+              <img 
+            class="iconSocialNetworkT"
+            src="../assets/images/iconTwitter.png" 
+            alt="iconTwitter">
+          </a>
+          
+          </li>
+          <li  class="listSocialNetwork">
+            <a href="#">
+                <img 
+                class="iconSocialNetwork"
+                src="../assets/images/iconGoogle+.png" 
+                alt="iconGoogle">
+            </a>
+           
+            </li>
+      </ul>
+    </div>
+    <div class="lineHorizontalOne">
+
+    </div>
+
+  </div>
+
+  <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7 bg-mainTwo">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+       
+            <div class="navbar-nav contNav">
+              <a class="item-navA" href="#">INICIO</a>
+              <a class="item-nav" href="#">CONÓCENOS</a>
+              <a class="item-nav" href="#">PRODUCTOS Y SERVICIOS</a>
+              <a class="item-nav" href="#">NOTICIAS</a>
+              <a class="item-nav" href="#">CONTACTO</a>
+            
+            
+          </div>
+        </nav>
+        <div class="lineHorizontalOne">
+            <h1 class="textLineOne">
+                HACEMOS
+            </h1>
+            <h1 class="textLineThree">
+                POSIBLES TUS
+            </h1>
+            <h1 class="textLineTwo">
+                SUEÑOS TECNOLOGICOS
+            </h1>
+        </div>
+       
+            <div class="contNumber">
+                <h1  class="textNumberOne">
+                    02
+                   </h1>
+            
+                <h1  class="textNumberTwo">
+                    / 03
+                   </h1>
+            </div>
+               <div class="contBtns">
+                  <a href=""> <img src="../assets/images/btnBack.png" alt="bnt back"> </a>
+                  <a href=""> <img src="../assets/images/btnPass.png" alt="btn pass"></a>
+               </div>
+         
+    
+  </div>
+</div>
+<!-- /Section Main of Home -->
+
+<!-- Section products and services -->
+  <div class="sectionProductsServices">
+    <div class="row rowTittle">
+      <h1 class="text-center tittleSectionProductsServices">PRODUCTOS Y <strong class="ServiceTittle"> SERVICIOS </strong> </h1>
+    </div>
+    <div class="container contSectionTwo">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4  ">
+            <div class="card cardService text-center" style="width: 25rem;">
+                <img src="../assets/images/service.svg" width="80" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title cardTittleOne"> SOPORTE  </h5>
+                  <h5 class="card-title cardTittleTwo"> TÉCNICO  </h5>                                  
+                  <p class="card-text cardText marTop">Nunc et dolor vitae justo cursus commodo. Cras id dolor quam. Mauris id lacus sem. Maecenas at enim.</p>
+                  <div class="contBtnServices">
+                      <a href="#" class="btnServices">SOLICITAR SERVICIO</a>
+                  </div>
+                
+                
+                </div>
+              </div>
+        </div>
+      
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4  ">
+                <div class="card cardSuport text-center " style="width: 25rem;">
+                    <img src="../assets/images/support.svg" width="80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title cardTittleOne"> TELEFONÍA  </h5>
+                      <h5 class="card-title cardTittleTwo"> SOBRE ASTERISK  </h5>                                  
+                      <p class="card-text cardText">Nunc et dolor vitae justo cursus commodo. Cras id dolor quam. Mauris id lacus sem. Maecenas at enim.</p>
+                      <div class="contBtnSuport">
+                          <a href="#" class="btnServices">SOLICITAR SERVICIO</a>
+                      </div>
+                    
+                    </div>
+                  </div>
+            </div>
+      
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4  ">
+                <div class="card cardSuite text-center " style="width: 25rem;">
+                    <img src="../assets/images/line-chart.svg" width="80" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title cardTittleOne"> SUITE </h5>
+                      <h5 class="card-title cardTittleTwo"> SCRM  </h5>                                  
+                      <p class="card-text cardText  marTop">Nunc et dolor vitae justo cursus commodo. Cras id dolor quam. Mauris id lacus sem. Maecenas at enim.</p>
+                      <div class="contBtnServices">
+                          <a href="#" class="btnServices">SOLICITAR SERVICIO</a>
+                      </div>
+                    
+                    </div>
+                  </div>
+            
+        </div>
+   
+      
+    </div>
+    
+  </div>
+  
+  </div>
+  <div class="contSetinTwo">
+  
+      <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4  ">
+          <div class="card cardDeveloper text-center " style="width: 25rem;">
+              <img src="../assets/images/software.svg" width="80" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title cardTittleOne"> DESARROLLO</h5>
+                <h5 class="card-title cardTittleTwo"> DE SOFTWARE  </h5>                                  
+                <p class="card-text cardText  marTop">Nunc et dolor vitae justo cursus commodo. Cras id dolor quam. Mauris id lacus sem. Maecenas at enim.</p>
+                <div class="contBtnServices">
+                    <a href="#" class="btnServices">SOLICITAR SERVICIO</a>
+                </div>
+              
+              </div>
+            </div>
+            <div class="card cardAplication text-center " style="width: 25rem;">
+                <img src="../assets/images/application.svg" width="80" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title cardTittleOne"> APLICACIONES</h5>
+                  <h5 class="card-title cardTittleTwo"> MÓVILES  </h5>                                  
+                  <p class="card-text cardText  marTop">Nunc et dolor vitae justo cursus commodo. Cras id dolor quam. Mauris id lacus sem. Maecenas at enim.</p>
+                  <div class="contBtnServices">
+                      <a href="#" class="btnServices">SOLICITAR SERVICIO</a>
+                  </div>
+                
+                </div>
+              </div>
+              <div class="card cardAll text-center " style="width: 25rem;">
+                  <div class="card-body">
+                    <h5 class="card-title cardTittleOne"> VER TDOS </h5>
+                    <h5 class="card-title cardTittleTwo"> LOS SERVICIOS  </h5>                                  
+                    <div class="contBtnArrow">
+                        <img src="../assets/images/Flecha.svg" alt="">
+                    </div>
+                  
+                  </div>
+                </div>
+      
+    </div>
+    
+ 
+  </div>
+
+
+<!-- /Section products and services -->
+
+<!-- FOOTER -->
+<footer class="footer ">
+
+    <div class="contListFooter">
+        <a class="item-footerA" href="#">INICIO</a>
+        <a class="item-footer" href="#">CONÓCENOS</a>
+        <a class="item-footer" href="#">PRODUCTOS Y SERVICIOS</a>
+        <a class="item-footer" href="#">NOTICIAS</a>
+        <a class="item-footer" href="#">CONTACTO</a>
+      </div>
+     
+      <div class="contIconSocailNetwork">
+          <a href="#">
+              <img
+              width="30"
+              class="logoFooter"
+              src="../assets/images/logoFace.svg" 
+              alt="iconFacebook">
+           </a> 
+           <a href="#">
+              <img
+              width="30"
+              class="logoFooter"
+              src="../assets/images/logoTwitter.svg" 
+              alt="iconFacebook">
+           </a> 
+           <a href="#">
+              <img
+              width="30"
+              class="logoFooter"
+              src="../assets/images/logoGoogle+.svg" 
+              alt="iconFacebook">
+           </a> 
+        </div>
+      
+        <div class="contPolitic">
+          <h5 class="textPolitic">
+            iaTech 2019 * Todos los derechos reservados. Diseñado por Kevin
+          </h5>
+        </div>
+</footer>
+
+<!-- /FOOTER -->
+
+<!-- /HTML -->
